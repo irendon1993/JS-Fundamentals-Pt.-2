@@ -118,30 +118,38 @@ GOOD LUCK 😀
 // let koalaScore2 = 54;
 // let koalaScore3 = 49;
 
-let dolphinScore1 = 85;
-let dolphinScore2 = 54;
-let dolphinScore3 = 41;
+// let dolphinScore1 = 85;
+// let dolphinScore2 = 54;
+// let dolphinScore3 = 41;
 
-let koalaScore1 = 23;
-let koalaScore2 = 34;
-let koalaScore3 = 27;
+// let koalaScore1 = 23;
+// let koalaScore2 = 34;
+// let koalaScore3 = 27;
 
-const calcAverage = (score1, score2, score3) => {
-  let total = score1 + score2 + score3;
-  let average = total / 3;
-  return average;
-};
+// const calcAverage = (score1, score2, score3) => {
+//   let total = score1 + score2 + score3;
+//   let average = total / 3;
+//   return average;
+// };
+// Simplify algorithm
+const calcAverage = (a, b, c) => (a + b + c) / 3;
 
-let koalaScore = calcAverage(koalaScore1, koalaScore2, koalaScore3);
+let koalaScore = calcAverage(85, 54, 41);
 console.log(koalaScore);
 
-let dolphineScore = calcAverage(dolphinScore1, dolphinScore2, dolphinScore3);
+let dolphineScore = calcAverage(23, 34, 27);
 console.log(dolphineScore);
 
-if (koalaScore >= dolphineScore * 2) {
-  console.log("Koalas Win!");
-} else {
-  if (dolphineScore >= koalaScore * 2) {
-    console.log("Dolphins win");
-  } else console.log("No one wins");
-}
+const checkWinner = function (avgDolphins, avgKoalas) {
+  if (koalaScore >= dolphineScore * 2) {
+    console.log("Koalas Win!");
+  } else {
+    if (dolphineScore >= koalaScore * 2) {
+      console.log("Dolphins win");
+    } else console.log("No one wins");
+  }
+};
+
+checkWinner(dolphineScore, koalaScore);
+
+checkWinner();
