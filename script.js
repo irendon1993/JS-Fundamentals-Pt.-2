@@ -265,18 +265,48 @@ GOOD LUCK 😀
 // ];
 // console.log(total);
 
-const isaacArray = [
-  "Isaac",
-  "Rendon",
-  2037 - 1993,
-  "student",
-  ["trey", "kevin,", "jesus"],
-];
+// const isaacArray = [
+//   "Isaac",
+//   "Rendon",
+//   2037 - 1993,
+//   "student",
+//   ["trey", "kevin,", "jesus"],
+// ];
 
 const isaac = {
-  fistname: "Isaac",
+  firstName: "Isaac",
   lastName: "Rendon",
   age: 2037 - 1993,
   job: "student",
   friends: ["Trey", "Kevin,", "Jesus"],
 };
+console.log(isaac);
+
+console.log(isaac.lastName);
+console.log(isaac["lastName"]);
+
+const nameKey = "Name";
+console.log(isaac["first" + nameKey]);
+console.log(isaac["last" + nameKey]);
+
+const interestedIn = prompt(
+  "What do you want to know about Isaac? Choose between firstName, lastName, age, job, or friends"
+);
+
+if (isaac[interestedIn]) {
+  console.log(isaac[interestedIn]);
+} else {
+  console.log(
+    "Wrong Request! Choose between firstName, lastName, age, job, or friends"
+  );
+}
+
+isaac.location = "Florida";
+isaac["twitter"] = "@bigdickguy";
+console.log(isaac);
+
+// Challange
+// "Isaac has 3 friends and his best friend is called Trey"
+console.log(
+  `${isaac.firstName} has ${isaac.friends.length} friends and his best friend is ${isaac.friends[0]}`
+);
