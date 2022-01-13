@@ -273,40 +273,89 @@ GOOD LUCK 😀
 //   ["trey", "kevin,", "jesus"],
 // ];
 
+// const isaac = {
+//   firstName: "Isaac",
+//   lastName: "Rendon",
+//   age: 2037 - 1993,
+//   job: "student",
+//   friends: ["Trey", "Kevin,", "Jesus"],
+// };
+// console.log(isaac);
+
+// console.log(isaac.lastName);
+// console.log(isaac["lastName"]);
+
+// const nameKey = "Name";
+// console.log(isaac["first" + nameKey]);
+// console.log(isaac["last" + nameKey]);
+
+// const interestedIn = prompt(
+//   "What do you want to know about Isaac? Choose between firstName, lastName, age, job, or friends"
+// );
+
+// if (isaac[interestedIn]) {
+//   console.log(isaac[interestedIn]);
+// } else {
+//   console.log(
+//     "Wrong Request! Choose between firstName, lastName, age, job, or friends"
+//   );
+// }
+
+// isaac.location = "Florida";
+// isaac["twitter"] = "@bigdickguy";
+// console.log(isaac);
+
+// // Challange
+// // "Isaac has 3 friends and his best friend is called Trey"
+// console.log(
+//   `${isaac.firstName} has ${isaac.friends.length} friends and his best friend is ${isaac.friends[0]}`
+// );
+
 const isaac = {
   firstName: "Isaac",
   lastName: "Rendon",
-  age: 2037 - 1993,
+  birthYear: 1993,
   job: "student",
   friends: ["Trey", "Kevin,", "Jesus"],
+  hasDriversLiscenese: true,
+
+  canDrive: function () {
+    if (this.hasDriversLiscenese) {
+      return "has a drivers liscense";
+    } else {
+      return "has no drivers liscense";
+    }
+  },
+  // calcAge: function (birthYear) {
+  //   return 2037 - birthYear;
+  // },
+
+  // calcAge: function () {
+  //   // console.log(this);
+  //   return 2037 - this.birthYear;
+  // },
+  // };
+
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()}-year old ${
+      this.job
+    }, and has ${this.hasDriversLiscenese ? "a" : "no"} driver's liscense`;
+  },
 };
-console.log(isaac);
 
-console.log(isaac.lastName);
-console.log(isaac["lastName"]);
-
-const nameKey = "Name";
-console.log(isaac["first" + nameKey]);
-console.log(isaac["last" + nameKey]);
-
-const interestedIn = prompt(
-  "What do you want to know about Isaac? Choose between firstName, lastName, age, job, or friends"
-);
-
-if (isaac[interestedIn]) {
-  console.log(isaac[interestedIn]);
-} else {
-  console.log(
-    "Wrong Request! Choose between firstName, lastName, age, job, or friends"
-  );
-}
-
-isaac.location = "Florida";
-isaac["twitter"] = "@bigdickguy";
-console.log(isaac);
+console.log(isaac.calcAge());
+console.log(isaac.age);
 
 // Challange
-// "Isaac has 3 friends and his best friend is called Trey"
+// "Isaac is a 44 year odl student and has a drivers liscense"
 console.log(
-  `${isaac.firstName} has ${isaac.friends.length} friends and his best friend is ${isaac.friends[0]}`
+  `${isaac.firstName} is a ${isaac.age} year old ${
+    isaac.job
+  } and ${isaac.canDrive()}`
 );
+console.log(isaac.getSummary());
