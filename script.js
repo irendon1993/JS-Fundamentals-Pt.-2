@@ -445,6 +445,53 @@ GOOD LUCK 😀
 // console.log("Lifting wiegths repition 9");
 // console.log("Lifting wiegths repition 10");
 
-for (let rep = 1; rep <= 10; rep++) {
-  console.log(`Lifting wiegths repetition ${rep}`);
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`Lifting wiegths repetition ${rep}`);
+// }
+
+const isaac = [
+  "Isaac",
+  "Rendon",
+  2037 - 1993,
+  "student",
+  ["Trey", "Kevin", "Jesus"],
+  true,
+];
+const types = [];
+
+for (let i = 0; i < isaac.length; i++) {
+  console.log(isaac[i], typeof isaac[i]);
+
+  // Filling types array
+  // types[i] = typeof isaac[i];
+
+  types.push(typeof isaac[i]);
+}
+
+console.log(types);
+
+const years = [1993, 2001, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2037 - years[i]);
+}
+
+console.log(ages);
+
+// continue and break
+console.log("---ONLY STRINGS ----");
+
+for (let i = 0; i < isaac.length; i++) {
+  if (typeof isaac[i] !== "string") continue;
+
+  console.log(isaac[i], typeof isaac[i]);
+}
+
+console.log("---BREAK WITH NUMBER----");
+
+for (let i = 0; i < isaac.length; i++) {
+  if (typeof isaac[i] === "number") break;
+
+  console.log(isaac[i], typeof isaac[i]);
 }
