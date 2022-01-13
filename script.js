@@ -378,58 +378,73 @@ TEST DATA: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.9
 GOOD LUCK 😀
 */
 
-const mark = {
-  firstName: "Mark",
-  lastName: "Miller",
-  mass: 78,
-  height: 1.69,
+// const mark = {
+//   firstName: "Mark",
+//   lastName: "Miller",
+//   mass: 78,
+//   height: 1.69,
 
-  // calcBMI: function () {
-  //   return this.mass / this.height ** 2;
-  // },
+//   // calcBMI: function () {
+//   //   return this.mass / this.height ** 2;
+//   // },
 
-  // Adds a BMI property to object
-  calcBMI: function () {
-    this.bmi = this.mass / this.height ** 2;
-    return this.bmi;
-  },
-};
+//   // Adds a BMI property to object
+//   calcBMI: function () {
+//     this.bmi = this.mass / this.height ** 2;
+//     return this.bmi;
+//   },
+// };
 
-const john = {
-  firstName: "John",
-  lastName: "Smith",
-  mass: 92,
-  height: 1.95,
+// const john = {
+//   firstName: "John",
+//   lastName: "Smith",
+//   mass: 92,
+//   height: 1.95,
 
-  // calcBMI: function () {
-  //   return this.mass / this.height ** 2;
-  // },
+//   // calcBMI: function () {
+//   //   return this.mass / this.height ** 2;
+//   // },
 
-  calcBMI: function () {
-    this.bmi = this.mass / this.height ** 2;
-    return this.bmi;
-  },
-};
+//   calcBMI: function () {
+//     this.bmi = this.mass / this.height ** 2;
+//     return this.bmi;
+//   },
+// };
 
-console.log(mark.calcBMI());
-console.log(john.calcBMI());
+// console.log(mark.calcBMI());
+// console.log(john.calcBMI());
 
-if (mark.calcBMI() > john.calcBMI()) {
-  console.log(
-    `${mark.firstName} ${
-      mark.lastName
-    } has a higher bmi of ${mark.calcBMI()} than ${john.firstName} ${
-      john.lastName
-    }'s bmi of ${john.bmi}`
-  );
-} else {
-  console.log(
-    `${john.firstName} ${
-      john.lastName
-    } has a higher bmi of ${john.calcBMI()} than ${mark.firstName} ${
-      mark.lastName
-    }'s bmi of ${mark.bmi}`
-  );
+// if (mark.calcBMI() > john.calcBMI()) {
+//   console.log(
+//     `${mark.firstName} ${
+//       mark.lastName
+//     } has a higher bmi of ${mark.calcBMI()} than ${john.firstName} ${
+//       john.lastName
+//     }'s bmi of ${john.bmi}`
+//   );
+// } else {
+//   console.log(
+//     `${john.firstName} ${
+//       john.lastName
+//     } has a higher bmi of ${john.calcBMI()} than ${mark.firstName} ${
+//       mark.lastName
+//     }'s bmi of ${mark.bmi}`
+//   );
+// }
+
+// console.log(mark);
+
+// console.log("Lifting wiegths repition 1");
+// console.log("Lifting wiegths repition 2");
+// console.log("Lifting wiegths repition 3");
+// console.log("Lifting wiegths repition 4");
+// console.log("Lifting wiegths repition 5");
+// console.log("Lifting wiegths repition 6");
+// console.log("Lifting wiegths repition 7");
+// console.log("Lifting wiegths repition 8");
+// console.log("Lifting wiegths repition 9");
+// console.log("Lifting wiegths repition 10");
+
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting wiegths repetition ${rep}`);
 }
-
-console.log(mark);
