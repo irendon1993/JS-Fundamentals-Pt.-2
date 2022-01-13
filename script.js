@@ -131,25 +131,36 @@ GOOD LUCK 😀
 //   let average = total / 3;
 //   return average;
 // };
+
 // Simplify algorithm
-const calcAverage = (a, b, c) => (a + b + c) / 3;
+// const calcAverage = (a, b, c) => (a + b + c) / 3;
 
-let koalaScore = calcAverage(85, 54, 41);
-console.log(koalaScore);
+// let koalaScore = calcAverage(85, 54, 41);
+// console.log(koalaScore);
 
-let dolphineScore = calcAverage(23, 34, 27);
-console.log(dolphineScore);
+// let dolphineScore = calcAverage(23, 34, 27);
+// console.log(dolphineScore);
 
-const checkWinner = function (avgDolphins, avgKoalas) {
-  if (koalaScore >= dolphineScore * 2) {
-    console.log("Koalas Win!");
-  } else {
-    if (dolphineScore >= koalaScore * 2) {
-      console.log("Dolphins win");
-    } else console.log("No one wins");
-  }
-};
+// const checkWinner = function (avgDolphins, avgKoalas) {
+//   if (koalaScore >= dolphineScore * 2) {
+//     console.log("Koalas Win!");
+//   } else {
+//     if (dolphineScore >= koalaScore * 2) {
+//       console.log("Dolphins win");
+//     } else console.log("No one wins");
+//   }
+// };
 
-checkWinner(dolphineScore, koalaScore);
+// checkWinner(dolphineScore, koalaScore);
 
-checkWinner();
+// checkWinner();
+
+const friend1 = "Trey";
+const friend2 = "Kevin";
+const friend3 = "Jesus";
+
+const friends = ["Trey", "Kevin", "Jesus"];
+console.log(friends);
+
+const years = new Array(1991, 1984, 2008, 2020);
+console.log(friends[0]);
