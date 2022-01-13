@@ -496,23 +496,33 @@ GOOD LUCK 😀
 //   console.log(isaac[i], typeof isaac[i]);
 // }
 
-const isaac = [
-  "Isaac",
-  "Rendon",
-  2037 - 1993,
-  "student",
-  ["Trey", "Kevin", "Jesus"],
-  true,
-];
+// const isaac = [
+//   "Isaac",
+//   "Rendon",
+//   2037 - 1993,
+//   "student",
+//   ["Trey", "Kevin", "Jesus"],
+//   true,
+// ];
 
-for (let i = isaac.length - 1; i >= 0; i--) {
-  console.log(i, isaac[i]);
-}
+// for (let i = isaac.length - 1; i >= 0; i--) {
+//   console.log(i, isaac[i]);
+// }
 
-for (let exercise = 1; exercise < 4; exercise++) {
-  console.log(`-----------Starting exercise${exercise}-----------`);
+// for (let exercise = 1; exercise < 4; exercise++) {
+//   console.log(`-----------Starting exercise${exercise}-----------`);
 
-  for (let rep = 1; rep < 6; rep++) {
-    console.log(`lifting weight repetition ${rep}`);
-  }
+//   for (let rep = 1; rep < 6; rep++) {
+//     console.log(`lifting weight repetition ${rep}`);
+//   }
+// }
+
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`Lifting weights repeitiion ${rep}`);
+// }
+
+let rep = 1;
+while (rep <= 10) {
+  console.log(`Lifting Weight repetition ${rep}`);
+  rep++;
 }
