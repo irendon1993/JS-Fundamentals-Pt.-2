@@ -245,22 +245,38 @@ HINT: Remember that an array needs a value in each position, and that value can 
 
 GOOD LUCK 😀
 */
-let bills = [125, 555, 44];
+// let bills = [125, 555, 44];
 
-const calcTip = function (billValue) {
-  if (billValue >= 50 && billValue <= 300) {
-    return billValue * 0.15;
-  } else {
-    return billValue * 0.2;
-  }
-};
+// const calcTip = function (billValue) {
+//   if (billValue >= 50 && billValue <= 300) {
+//     return billValue * 0.15;
+//   } else {
+//     return billValue * 0.2;
+//   }
+// };
 
-const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
-console.log(tips);
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+// console.log(tips);
 
-const total = [
-  bills[0] + calcTip(bills[0]),
-  bills[1] + calcTip(bills[1]),
-  bills[2] + calcTip(bills[2]),
+// const total = [
+//   bills[0] + calcTip(bills[0]),
+//   bills[1] + calcTip(bills[1]),
+//   bills[2] + calcTip(bills[2]),
+// ];
+// console.log(total);
+
+const isaacArray = [
+  "Isaac",
+  "Rendon",
+  2037 - 1993,
+  "student",
+  ["trey", "kevin,", "jesus"],
 ];
-console.log(total);
+
+const isaac = {
+  fistname: "Isaac",
+  lastName: "Rendon",
+  age: 2037 - 1993,
+  job: "student",
+  friends: ["Trey", "Kevin,", "Jesus"],
+};
