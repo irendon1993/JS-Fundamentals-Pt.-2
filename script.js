@@ -600,15 +600,11 @@ let arr = [0, 1, 2, 3, 4, 5];
 
 const calcAverage = function (arr) {
   let calcTotal = 0;
-  console.log(calcTotal);
-  console.log(calcTotal + 4);
 
-  for (let i = 0; i < 6; i++) {
-    console.log(arr);
-    calcTotal = calcTotal + arr[i];
-    console.log(calcTotal);
-    return calcTotal;
+  for (let i = 0; i < arr.length; i++) {
+    calcTotal += arr[i];
   }
+  return calcTotal / arr.length;
 };
 
 console.log(calcAverage(arr));
